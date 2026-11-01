@@ -1,0 +1,16 @@
+replicaCount: 1
+
+image:
+  repository: redis
+  tag: "latest"
+  pullPolicy: IfNotPresent
+
+containerPort: 6379
+
+service:
+  type: ClusterIP
+  port: 6379
+
+env: []
+
+resources: {}
